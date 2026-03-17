@@ -1,0 +1,134 @@
+{
+  "projectType": "saas",
+  "projectName": "B-Accesible",
+  "projectDescription": "B-Accesible is an accessible digital banking proof-of-concept for Mexico that uses adaptive AI to assist users with visual, cognitive, or literacy challenges through voice guidance, easy reading, and fraud-aware transactions.",
+  "theme": "almond",
+  "primaryColor": "#23aae2",
+  "lightColor": "#72c6eb",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "architecture"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/accessibility",
+              "features/ai-nudging",
+              "features/fraud-risk",
+              "features/open-finance"
+            ]
+          },
+          {
+            "group": "Ethics & Compliance",
+            "pages": [
+              "ethics/principles",
+              "ethics/privacy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/register",
+              "api/auth/login"
+            ]
+          },
+          {
+            "group": "Profile",
+            "pages": [
+              "api/profile/me",
+              "api/profile/accessibility",
+              "api/profile/consent"
+            ]
+          },
+          {
+            "group": "Ledger",
+            "pages": [
+              "api/ledger/accounts",
+              "api/ledger/transactions",
+              "api/ledger/beneficiaries"
+            ]
+          },
+          {
+            "group": "AI Service",
+            "pages": [
+              "api/ai/nudge",
+              "api/ai/accessibility",
+              "api/ai/risk"
+            ]
+          },
+          {
+            "group": "Open Finance",
+            "pages": [
+              "api/openfinance/connections",
+              "api/openfinance/products"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "deployment/local-setup",
+              "deployment/docker",
+              "deployment/database"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Adaptive accessibility profiles (standard, large-text high-contrast, voice-assisted)",
+    "AI-powered nudging engine that detects user difficulty in real time",
+    "Fraud and transaction risk scoring via ML models",
+    "SPEI-compatible money transfers and payment of services",
+    "Open Finance integration for multi-bank account aggregation",
+    "Microservices architecture with Ocelot API Gateway",
+    "React frontend with Tailwind CSS and Framer Motion animations",
+    "Ethical AI with full transparency, explainability, and WCAG 2.1 AA compliance"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/register",
+    "POST /api/auth/login",
+    "GET /api/profile/me",
+    "PUT /api/profile/me",
+    "GET /api/profile/accessibility",
+    "PUT /api/profile/accessibility",
+    "GET /api/profile/consent",
+    "PUT /api/profile/consent",
+    "GET /api/ledger/accounts",
+    "POST /api/ledger/accounts",
+    "GET /api/ledger/transactions",
+    "POST /api/ledger/transactions",
+    "GET /api/ledger/beneficiaries",
+    "POST /api/ledger/beneficiaries",
+    "DELETE /api/ledger/beneficiaries/{id}",
+    "POST /ai/nudge",
+    "POST /ai/accessibility",
+    "POST /ai/risk",
+    "GET /ai/health",
+    "GET /api/openfinance/connections",
+    "POST /api/openfinance/connections",
+    "DELETE /api/openfinance/connections/{id}",
+    "GET /api/openfinance/products",
+    "POST /api/openfinance/sync/{connectionId}"
+  ]
+}
